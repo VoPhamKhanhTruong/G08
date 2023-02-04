@@ -44,4 +44,51 @@ public class b1 {
 		if (n <= 1) return n;
 	    else return DQFibo(n-1) + DQFibo(n-2);
 	}
+	
+	public static int UCLN(int a, int b) {
+	    while (b != 0) {
+	      int r = a % b;
+	      a = b;
+	      b = r;
+	    }
+	    return a;
+	  }
+
+	  public static int BCNN(int a, int b) {
+	    return a * b / UCLN(a, b);
+	  }
+	  
+	  public static boolean LKSNT(int n) {
+		    if (n <= 1) {
+		      return false;
+		    }
+		    for (int i = 2; i < n; i++) {
+		      if (n % i == 0) {
+		        return false;
+		      }
+		    }
+		    return true;
+		  }
+	  
+	  public static int tinhTongSN(int n) {
+		    int sum = 0;
+		    while (n > 0) {
+		      int digit = n % 10;
+		      sum += digit;
+		      n /= 10;
+		    }
+		    return sum;
+	  }
+	 
+	  public static boolean LKFibonacci(int n) {
+		    if (n <= 1) {
+		      return false;
+		    }
+		    for (int i = 2; i < n; i++) {
+		      if (n % i == 0) {
+		        return false;
+		      }
+		    }
+		    return true;
+		  } 
 }
