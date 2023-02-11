@@ -10,14 +10,14 @@ public class Main {
 	public static void main(String[] args) {
 //	LaChan(2);
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Nhap a: ");
-		int a = scan.nextInt();
-		System.out.println("Nhap b: ");
-		int b = scan.nextInt();
-		System.out.println("Nhap c: ");
-		int c = scan.nextInt();
-		System.out.println("Nhap n: ");
-		int n = scan.nextInt();
+//		System.out.println("Nhap a: ");
+//		int a = scan.nextInt();
+//		System.out.println("Nhap b: ");
+//		int b = scan.nextInt();
+//		System.out.println("Nhap c: ");
+//		int c = scan.nextInt();
+//		System.out.println("Nhap n: ");
+//		int n = scan.nextInt();
 		// b1
 //		b1.PTB2(a, b, c);
 
@@ -63,18 +63,32 @@ public class Main {
 //		System.out.println(b1.tinhTongSN(n));
 
 		// b10
-		int f0 = 0, f1 = 1, f2 = 1;
-		while (f2 < n) {
-			if (b1.LKFibonacci(f2)) {
-				System.out.println(f2 + " la so nguyen to trong day Fibonacci");
-			}
-			f0 = f1;
-			f1 = f2;
-			f2 = f0 + f1;
-		}
+//		int f0 = 0, f1 = 1, f2 = 1;
+//		while (f2 < n) {
+//			if (b1.LKFibonacci(f2)) {
+//				System.out.println(f2 + " la so nguyen to trong day Fibonacci");
+//			}
+//			f0 = f1;
+//			f1 = f2;
+//			f2 = f0 + f1;
+//		}
+//		
+//		b1.LietKeSNT_NhoHon(n);
+//		System.out.println();
+//		b1.LietKeNSNT(n);
 		
-		b1.LietKeSNT_NhoHon(n);
-		System.out.println();
-		b1.LietKeNSNT(n);
+		float mang[] = {1,3,5,7,9};
+//		float mang2[] = new float[n];
+//		float[] nhap = b1.NhapMang();
+//		mang2[0] = 10;
+//		mang2[1] = 20;
+//		mang[2] = 30;
+//		float s = b1.Tong(mang);
+//		float s2 = b1.Tong(mang2);
+//		System.out.println("Tong mang la: " + s);
+//		System.out.println("Tong mang la: " + s2);
+		
+		float[] mma = b1.MinMaxAve(b1.NhapMang());
+		System.out.printf("Min = %f, Max = %f Ave = %f",mma[0],mma[1],mma[2]);
 	}
 }
