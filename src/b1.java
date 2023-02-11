@@ -90,5 +90,61 @@ public class b1 {
 		      }
 		    }
 		    return true;
-		  } 
+		  }
+	  public static long Fibo2(int n) {
+		  long[] F = new long [n+1];
+		  F[0] = 0;F[1] = 1;
+		  for(int i = 2;i<=n;i++) {
+			  F[i] = F[i-1] + F[i-2];
+		  }
+		  return F[n];  
+	  }
+	  
+	  public static long UCLN(long a,long b) {
+		  while(a!=b) {
+			  if(a>b)
+				  a = a - b;
+			  else
+				  b = b - a;
+		  }
+		  return a;
+	  }
+	  
+	  public static long DQ_UCLN(long a, long b) {
+		  if(a == b) return a;
+		  if(a>b) return DQ_UCLN(a-b,b);
+		  return DQ_UCLN(a,b-a);
+	  }
+	  
+	  public static long BCNN(long a,long b) {
+		  return a*b/UCLN(a, b);
+	  }
+	  public static boolean LaSNT(long n) {
+		  if(n<2) return false;
+		  for(long i = 2;i<n;i++)
+			  if(n%i==0)
+				  return false;
+		  return true;
+	  }
+	  public static void LietKeSNT_NhoHon(long n) {
+		  for(long i = 2;i<n;i++) {
+			  if(LaSNT(n))
+				  System.out.println(i + " ");
+		  }
+	  }
+	  public static void LietKeNSNT(long n) {
+		  long dem = 0;
+		  long i=2;
+		  while(dem!=n) {
+			  if(LaSNT(i)) {
+				  System.out.println(i+ " ");
+				  dem++;
+			  }
+			  i++;
+		  }
+	  }
+	  
+	  public static void LietKeSNT5ChuSo() {
+		  
+	  }
 }

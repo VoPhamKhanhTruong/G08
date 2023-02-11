@@ -72,5 +72,9 @@ public class Main {
 			f1 = f2;
 			f2 = f0 + f1;
 		}
+		
+		b1.LietKeSNT_NhoHon(n);
+		System.out.println();
+		b1.LietKeNSNT(n);
 	}
 }
