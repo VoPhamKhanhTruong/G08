@@ -121,6 +121,7 @@ public class b1 {
 	  public static long BCNN(long a,long b) {
 		  return a*b/UCLN(a, b);
 	  }
+	  
 	  public static boolean LaSNT(long n) {
 		  if(n<2) return false;
 		  for(long i = 2;i<n;i++)
@@ -128,12 +129,14 @@ public class b1 {
 				  return false;
 		  return true;
 	  }
+	  
 	  public static void LietKeSNT_NhoHon(long n) {
 		  for(long i = 2;i<n;i++) {
 			  if(LaSNT(n))
 				  System.out.println(i + " ");
 		  }
 	  }
+	  
 	  public static void LietKeNSNT(long n) {
 		  long dem = 0;
 		  long i=2;
@@ -153,6 +156,7 @@ public class b1 {
 			System.out.println();
 		}  
 	  }
+	  
 	  public static float Tong(float[] mang) {
 		  float s = 0;
 		for(int i=0;i<mang.length;i++)
@@ -220,7 +224,7 @@ public class b1 {
 		  return rs;
 	  }
 	  
-	  public static float[] [] NhapMatran(){
+	  public static float[][] NhapMatran(){
 		  
 		  return null;
 	  }
