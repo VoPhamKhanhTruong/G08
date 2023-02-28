@@ -7,5 +7,9 @@ public class Main {
 		Time nextSecondTime = time.nextSecond();
 		System.out.println(time.toString());
 		
+		Author author = new Author("Truong", "voxtruong93@gmail.com", 'c');
+		System.out.println(author.toString());
+		
+		Book book = new Book("Truong", "voxtruong93@gmail.com", 'c', "Nguyen Nhat Anh", 19.00, , 0)
 	}
 }
