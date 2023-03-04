@@ -10,6 +10,6 @@ public class Main {
 		Author author = new Author("Truong", "voxtruong93@gmail.com", 'c');
 		System.out.println(author.toString());
 		
-		Book book = new Book("Truong", "voxtruong93@gmail.com", 'c', "Nguyen Nhat Anh", 19.00, , 0)
+		Book book = new Book("Truong", "voxtruong93@gmail.com", 'c', "Nguyen Nhat Anh", null, 19.00, 0);
 	}
 }
